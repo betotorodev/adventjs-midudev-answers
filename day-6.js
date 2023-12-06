@@ -48,3 +48,18 @@ function maxDistance(movements) {
   }
   return Math.abs(movesCount)
 }
+
+// other solution
+
+function maxDistance(movements) {
+  let count = 0
+  let balance = 0
+
+  for (const move of movements) {
+    if (move === '>') count++
+    if (move === '<') count--
+    if (move === '*') balance++
+
+  }
+  return Math.abs(count) + balance
+}
