@@ -34,3 +34,19 @@ function adjustLights(lights) {
 
   return Math.min(ligthsToChange, reversedLithsToChange)
 }
+
+// solución de chat GPT 
+
+// function adjustLights(lights) {
+//   if (lights.length === 0) return 0;
+
+//   const firstLight = lights[0];
+//   let ligthsToChange = 0;
+
+//   for (let i = 0; i < lights.length; i++) {
+//     const isOdd = i % 2 !== 0;
+//     ligthsToChange += isOdd ? (lights[i] !== firstLight) : (lights[i] === firstLight);
+//   }
+
+//   return Math.min(ligthsToChange, lights.length - ligthsToChange);
+// }
